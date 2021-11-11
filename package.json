@@ -8,13 +8,13 @@
   "description": "registration form",
   "main": "index.js",
   "scripts": {
-    "client": "cd registration && npm start",
+    "client": "cd client && npm start",
     "server": "nodemon server.js",
-    "build": "cd registration && npm run build",
+    "build": "cd client && npm run build",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server.js",
-    "heroku-postbuild": "cd registration && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
-    "test-client": "cd registration && npm run test"
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "test-client": "cd client && npm run test"
   },
   "author": "shubham",
   "license": "ISC",
